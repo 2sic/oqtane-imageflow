@@ -1,6 +1,6 @@
 # ImageFlow Oqtane module
 
-Image processing and optimizing middleware with querystring API for Oqtane 2.x.
+Image processing and optimizing middleware with querystring API for [Oqtane](https://www.oqtane.org/) 2.x.
 
 
 ## How to install Imageflow module in your Oqtane website?
@@ -42,3 +42,4 @@ Image processing and optimizing middleware with querystring API for Oqtane 2.x.
 1. [Querystring API documentation](https://docs.imageflow.io/querystring/introduction.html)
 1. [Imageflow.NET Server](https://github.com/imazen/imageflow-dotnet-server)
 1. [Imageflow](https://www.imageflow.io/)
+1. [Oqtane](https://github.com/oqtane/oqtane.framework)
