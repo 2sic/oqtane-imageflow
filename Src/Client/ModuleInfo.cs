@@ -1,7 +1,7 @@
 using Oqtane.Models;
 using Oqtane.Modules;
 
-namespace ToSic.Oqt.ImageFlow
+namespace ToSic.ImageFlow.Oqt
 {
     public class ModuleInfo : IModule
     {
@@ -10,9 +10,9 @@ namespace ToSic.Oqt.ImageFlow
             Name = "ImageFlow",
             Description = "Image processing and optimizing middleware with querystring API for Oqtane.",
             Version = "1.0.0",
-            ServerManagerType = "ToSic.Oqt.ImageFlow.Manager.ImageFlowManager, ToSic.Oqt.ImageFlow.Server.Oqtane",
+            ServerManagerType = "ToSic.ImageFlow.Oqt.Manager.ImageFlowManager, ToSic.ImageFlow.Oqt.Server.Oqtane",
             ReleaseVersions = "1.0.0",
-            Dependencies = "ToSic.Oqt.ImageFlow.Shared.Oqtane",
+            Dependencies = "ToSic.ImageFlow.Oqt.Shared.Oqtane",
             Runtimes = "Server",
             Categories = "Admin",
         };

@@ -6,7 +6,7 @@ using Oqtane.Models;
 using Oqtane.Infrastructure;
 using Oqtane.Repository;
 
-namespace ToSic.Oqt.ImageFlow.Manager
+namespace ToSic.ImageFlow.Oqt.Manager
 {
     public class ImageFlowManager : IInstallable, IPortable
     {

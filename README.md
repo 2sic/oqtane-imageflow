@@ -5,7 +5,7 @@ Image processing and optimizing middleware with querystring API for [Oqtane](htt
 
 ## How to install Imageflow module in your Oqtane website?
 
-1. Copy InstallPackages/ToSic.Oqt.ImageFlow.x.x.x.nupkg to your Oqtane.Server\wwwroot\Modules\.
+1. Copy InstallPackages/ToSic.ImageFlow.Oqt.x.x.x.nupkg to your Oqtane.Server\wwwroot\Modules\.
 
 1. Recycle your oqtane IIS AppPool if necessary.
 
@@ -28,9 +28,9 @@ Image processing and optimizing middleware with querystring API for [Oqtane](htt
     ![](Doc/images/imageflow-module.png)
 
 
-## How create ToSic.Oqt.ImageFlow.x.x.x.nupkg?
+## How create ToSic.ImageFlow.Oqt.x.x.x.nupkg?
 
-1. Build release version and pack to ToSic.Oqt.ImageFlow.x.x.x.nupkg
+1. Build release version and pack to ToSic.ImageFlow.Oqt.x.x.x.nupkg
 
     ```
     cd InstallPackages
