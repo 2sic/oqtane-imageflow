@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Client\ToSic.Oqt.ImageFlow.Client.csproj" />
+    <ProjectReference Include="..\Server\ToSic.Oqt.ImageFlow.Server.csproj" />
+    <ProjectReference Include="..\Shared\ToSic.Oqt.ImageFlow.Shared.csproj" />
+  </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="IF $(ConfigurationName) == Debug (debug.cmd)" />
+    <!--<Exec Command="IF $(ConfigurationName) == Release (release.cmd)" />-->
+  </Target>
+
+</Project>
