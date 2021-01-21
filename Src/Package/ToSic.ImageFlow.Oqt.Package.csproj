@@ -11,9 +11,15 @@
     <ProjectReference Include="..\Shared\ToSic.ImageFlow.Oqt.Shared.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="linux\" />
+    <Folder Include="osx\" />
+    <Folder Include="win\" />
+  </ItemGroup>
+
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
     <Exec Command="IF $(ConfigurationName) == Debug (debug.cmd)" />
-    <!--<Exec Command="IF $(ConfigurationName) == Release (release.cmd)" />-->
+    <Exec Command="IF $(ConfigurationName) == Release (release.cmd)" />
   </Target>
 
 </Project>

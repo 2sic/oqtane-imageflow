@@ -1,4 +1,3 @@
 @cd ..\Src\Package\
-@call release.cmd 
+@call pack.cmd 
 @cd ..\..\InstallPackages\
-@REM xcopy "*.nupkg" "..\..\oqtane.framework\Oqtane.Server\wwwroot\Modules\" /Y

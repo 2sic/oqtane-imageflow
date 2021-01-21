@@ -1,3 +1,4 @@
+@REM By convention if you place the oqtane module root folder at the same level as the oqtane framework, then you will not have to modify any folder configuration.
 XCOPY "..\Client\bin\Debug\net5.0\ToSic.ImageFlow.Oqt.Client.Oqtane.dll" "..\..\..\oqtane.framework\Oqtane.Server\bin\Debug\net5.0\" /Y
 XCOPY "..\Client\bin\Debug\net5.0\ToSic.ImageFlow.Oqt.Client.Oqtane.pdb" "..\..\..\oqtane.framework\Oqtane.Server\bin\Debug\net5.0\" /Y
 XCOPY "..\Server\bin\Debug\net5.0\ToSic.ImageFlow.Oqt.Server.Oqtane.dll" "..\..\..\oqtane.framework\Oqtane.Server\bin\Debug\net5.0\" /Y
