@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>ToSic.ImageFlow.Oqt</id>
-    <version>1.0.0</version>
+    <version>1.0.0-osx</version>
     <authors>ToSic</authors>
     <owners>ToSic</owners>
     <title>ImageFlow</title>
@@ -35,7 +35,7 @@
     <file src="..\Server\bin\Release\net5.0\publish\Imageflow.*" target="lib\net5.0" />
     <file src="..\Server\bin\Release\net5.0\publish\Imazen.*" target="lib\net5.0" />
     <file src="..\Server\bin\Release\net5.0\publish\Microsoft.IO.*" target="lib\net5.0" />
-    <file src="..\Server\bin\Release\net5.0\publish\runtimes\win*\**\*imageflow.*" target="runtimes" />
+    <file src="..\Server\bin\Release\net5.0\publish\runtimes\osx*\**\*imageflow.*" target="runtimes" />
     <file src="..\Server\wwwroot\**\*.*" target="wwwroot" />
   </files>
 </package>
