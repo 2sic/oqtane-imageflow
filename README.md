@@ -9,7 +9,7 @@ Image processing and optimizing middleware with querystring API for [Oqtane](htt
 
 Install it in standard way, as any other oqtane module.
 
-## Option a)
+## TODO - Option a)
 
 1. Open **Module Management** in **Admin Dashboard**. On **Download** tab find **ImageFlow** in list of modules. Click on its **Download** button. After download click on **Install**.
 
@@ -26,7 +26,7 @@ Install it in standard way, as any other oqtane module.
 1. Just copy _ToSic.ImageFlow.Oqt.x.x.x-*.nupkg_ package to your `Oqtane.Server\wwwroot\Modules\` and next oqtane website restart will auto-install Imageflow module as part of oqtane application startup process.
 
 
-# Development in Oqtane.Framework with ImageFlow nuget dependency
+# TODO - Development in Oqtane.Framework with ImageFlow nuget dependency
 
 1. It is required to have [Oqtane.Framework](https://github.com/oqtane/oqtane.framework) development environment in folder **oqtane.framework**.
     ```
@@ -68,10 +68,6 @@ Install it in standard way, as any other oqtane module.
     cd InstallPackages
     pack.cmd
     ```
-
-## How to deploy ImageFlow oqtane module from Visual Studio to your local oqtane.framework dev environment?
-
-1. In Visual Studio open solution `oqtane-imageflow\Src\ToSic.ImageFlow.Oqt.sln`.
 
 
 # Optionally add ImageFlow module to Admin Dashboard
