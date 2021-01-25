@@ -12,7 +12,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using Oqtane.Infrastructure;
 
-namespace ToSic.ImageFlow.Oqt.Server
+namespace ToSic.Imageflow.Oqt.Server
 {
     class Startup : IServerStartup
     {

@@ -1,7 +1,7 @@
 @REM By convention if you place the oqtane module root folder at the same level as the oqtane framework, then you will not have to modify any folder configuration.
-XCOPY "..\Server\bin\Debug\net5.0\ToSic.ImageFlow.Oqt.Server.Oqtane.dll" "..\..\..\oqtane.framework\Oqtane.Server\bin\Debug\net5.0\" /Y
-XCOPY "..\Server\bin\Debug\net5.0\ToSic.ImageFlow.Oqt.Server.Oqtane.pdb" "..\..\..\oqtane.framework\Oqtane.Server\bin\Debug\net5.0\" /Y
-XCOPY "..\Server\wwwroot\Modules\ToSic.ImageFlow.Oqt\*" "..\..\..\oqtane.framework\Oqtane.Server\wwwroot\Modules\ToSic.ImageFlow.Oqt\" /Y /S /I
+XCOPY "..\Server\bin\Debug\net5.0\ToSic.Imageflow.Oqt.Server.Oqtane.dll" "..\..\..\oqtane.framework\Oqtane.Server\bin\Debug\net5.0\" /Y
+XCOPY "..\Server\bin\Debug\net5.0\ToSic.Imageflow.Oqt.Server.Oqtane.pdb" "..\..\..\oqtane.framework\Oqtane.Server\bin\Debug\net5.0\" /Y
+XCOPY "..\Server\wwwroot\Modules\ToSic.Imageflow.Oqtane\*" "..\..\..\oqtane.framework\Oqtane.Server\wwwroot\Modules\ToSic.Imageflow.Oqtane\" /Y /S /I
 @REM nuget dependences
 XCOPY "..\packages\imageflow.server\0.5.6\lib\netcoreapp3.1\Imageflow.Server.dll" "..\..\..\oqtane.framework\Oqtane.Server\bin\Debug\net5.0\" /Y
 XCOPY "..\packages\imageflow.server.hybridcache\0.5.6\lib\netcoreapp3.1\Imageflow.Server.HybridCache.dll" "..\..\..\oqtane.framework\Oqtane.Server\bin\Debug\net5.0\" /Y

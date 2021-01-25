@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>ToSic.ImageFlow.Oqt</id>
+    <id>ToSic.Imageflow.Oqtane</id>
     <version>1.0.2</version>
     <authors>2sic</authors>
     <owners>2sic</owners>
-    <title>Imageflow Oqtane middleware (win runtimes)</title>
-    <description>Imageflow Oqtane middleware (win runtimes)</description>
+    <title>2sic Imageflow image processing and optimizing middleware (all runtimes)</title>
+    <description>Oqtane module with Imageflow.NET Server middleware for fetching, processing, and caching images on-demand.</description>
+    <summary>Imageflow.NET Server image processing and optimizing middleware with querystring API for Oqtane 2.x.</summary>
     <copyright>2sic</copyright>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <license type="expression">MIT</license>
@@ -15,8 +16,16 @@
     <iconUrl>https://github.com/2sic/oqtane-imageflow/blob/main/Src/Package/images/icon.jpg</iconUrl>
     <icon>images\icon.jpg</icon>
     <tags>oqtane module</tags>
-    <releaseNotes></releaseNotes>
-    <summary></summary>
+    <releaseNotes>
+      Because nuget package with dependencies for all runtimes is very big (24 MB) separate smaller packages are created for different platforms.
+      Recommendation is to install only packages that targets platforms in use.
+      Installing more packages in same oqtane installation will effectively append runtime dependence from last package.
+
+      - ToSic.Imageflow.Oqtane.1.0.2-all.nupkg (23.3 MB)  - all runtimes,
+      - ToSic.Imageflow.Oqtane.1.0.2-linux.nupkg (16.9 MB) - linux, unix runtimes,
+      - ToSic.Imageflow.Oqtane.1.0.2-osx.nupkg (2.76 MB) - osx runtime,
+      - ToSic.Imageflow.Oqtane.1.0.2-win.nupkg (4.08 MB) - win runtimes.
+    </releaseNotes>
     <dependencies>
       <group targetFramework=".NETCoreApp5.0">
         <dependency id="Oqtane.Framework" version="2.0.0" />
@@ -27,12 +36,12 @@
   </metadata>
   <files>
     <file src="images\icon.jpg" target="images\" />
-    <file src="..\Server\bin\Release\net5.0\ToSic.ImageFlow.Oqt.Server.Oqtane.dll" target="lib\net5.0" />
-    <file src="..\Server\bin\Release\net5.0\ToSic.ImageFlow.Oqt.Server.Oqtane.pdb" target="lib\net5.0" />
+    <file src="..\Server\bin\Release\net5.0\ToSic.Imageflow.Oqt.Server.Oqtane.dll" target="lib\net5.0" />
+    <file src="..\Server\bin\Release\net5.0\ToSic.Imageflow.Oqt.Server.Oqtane.pdb" target="lib\net5.0" />
     <file src="..\Server\bin\Release\net5.0\publish\Imageflow.*" target="lib\net5.0" />
     <file src="..\Server\bin\Release\net5.0\publish\Imazen.*" target="lib\net5.0" />
     <file src="..\Server\bin\Release\net5.0\publish\Microsoft.IO.*" target="lib\net5.0" />
-    <file src="..\Server\bin\Release\net5.0\publish\runtimes\win*\**\*imageflow.*" target="runtimes" />
+    <file src="..\Server\bin\Release\net5.0\publish\runtimes\**\*imageflow.*" target="runtimes" />
     <file src="..\Server\wwwroot\**\*.*" target="wwwroot" />
   </files>
 </package>

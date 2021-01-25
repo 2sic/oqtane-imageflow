@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Server\ToSic.ImageFlow.Oqt.Server.csproj" />
+    <ProjectReference Include="..\Server\ToSic.Imageflow.Oqtane.Server.csproj" />
   </ItemGroup>
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">

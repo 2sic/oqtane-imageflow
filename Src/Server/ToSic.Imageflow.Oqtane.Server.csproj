@@ -4,13 +4,13 @@
     <TargetFramework>net5.0</TargetFramework>
     <LangVersion>7.3</LangVersion>
     <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
-    <Version>1.0.1</Version>
-    <Product>ToSic.ImageFlow.Oqt</Product>
-    <Authors>ToSic</Authors>
-    <Company>ToSic</Company>
-    <Description></Description>
-    <Copyright>ToSic</Copyright>
-    <AssemblyName>ToSic.ImageFlow.Oqt.Server.Oqtane</AssemblyName>
+    <Version>1.0.2</Version>
+    <Product>ToSic.Imageflow.Oqtane</Product>
+    <Authors>2sic</Authors>
+    <Company>2sic</Company>
+    <Description>Imageflow.NET Server image processing and optimizing middleware with querystring API for Oqtane 2.x.</Description>
+    <Copyright>2sic</Copyright>
+    <AssemblyName>ToSic.Imageflow.Oqt.Server.Oqtane</AssemblyName>
     <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
   </PropertyGroup>
 
