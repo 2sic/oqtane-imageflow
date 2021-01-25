@@ -2,16 +2,17 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>ToSic.ImageFlow.Oqt</id>
-    <version>1.0.1</version>
-    <authors>ToSic</authors>
-    <owners>ToSic</owners>
-    <title>ImageFlow</title>
-    <description>ImageFlow Oqtane module (osx runtime)</description>
+    <version>1.0.2</version>
+    <authors>2sic</authors>
+    <owners>2sic</owners>
+    <title>Imageflow Oqtane middleware (osx runtime)</title>
+    <description>Imageflow Oqtane middleware (osx runtime)</description>
     <copyright>2sic</copyright>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <license type="expression">MIT</license>
-    <projectUrl>https://github.com/oqtane/oqtane.framework</projectUrl>
-    <iconUrl>https://www.oqtane.org/Portals/0/icon.jpg</iconUrl>
+    <projectUrl>https://github.com/2sic/oqtane-imageflow</projectUrl>
+    <repository type="git" url="https://github.com/2sic/oqtane-imageflow.git" branch="master" />
+    <iconUrl>https://github.com/2sic/oqtane-imageflow/blob/main/Src/Package/images/icon.jpg</iconUrl>
     <icon>images\icon.jpg</icon>
     <tags>oqtane module</tags>
     <releaseNotes></releaseNotes>
