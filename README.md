@@ -1,4 +1,4 @@
-# Imageflow Oqtane module
+# 2sic Imageflow Oqtane module middleware
 
 [Imageflow.NET Server](https://github.com/imazen/imageflow-dotnet-server) image processing and optimizing middleware with querystring API for [Oqtane](https://www.oqtane.org/) 2.x.
 
