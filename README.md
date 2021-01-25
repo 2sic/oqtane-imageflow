@@ -7,9 +7,11 @@
 
 Install it in standard way, as any other oqtane module.
 
-## TODO - Option a)
+## Option a)
 
 1. Open **Module Management** in **Admin Dashboard**. On **Download** tab find **Imageflow** in list of modules. Click on its **Download** button. After download click on **Install**.
+
+    ![](Doc/images/install-oqtane-module-form-nuget.png)
 
 ## Option b)
 
