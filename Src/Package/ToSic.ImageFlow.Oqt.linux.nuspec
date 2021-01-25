@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>ToSic.ImageFlow.Oqt</id>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <authors>ToSic</authors>
     <owners>ToSic</owners>
     <title>ImageFlow</title>
@@ -26,12 +26,8 @@
   </metadata>
   <files>
     <file src="images\icon.jpg" target="images\" />
-    <file src="..\Client\bin\Release\net5.0\ToSic.ImageFlow.Oqt.Client.Oqtane.dll" target="lib\net5.0" />
-    <file src="..\Client\bin\Release\net5.0\ToSic.ImageFlow.Oqt.Client.Oqtane.pdb" target="lib\net5.0" />
     <file src="..\Server\bin\Release\net5.0\ToSic.ImageFlow.Oqt.Server.Oqtane.dll" target="lib\net5.0" />
     <file src="..\Server\bin\Release\net5.0\ToSic.ImageFlow.Oqt.Server.Oqtane.pdb" target="lib\net5.0" />
-    <file src="..\Shared\bin\Release\net5.0\ToSic.ImageFlow.Oqt.Shared.Oqtane.dll" target="lib\net5.0" />
-    <file src="..\Shared\bin\Release\net5.0\ToSic.ImageFlow.Oqt.Shared.Oqtane.pdb" target="lib\net5.0" />
     <file src="..\Server\bin\Release\net5.0\publish\Imageflow.*" target="lib\net5.0" />
     <file src="..\Server\bin\Release\net5.0\publish\Imazen.*" target="lib\net5.0" />
     <file src="..\Server\bin\Release\net5.0\publish\Microsoft.IO.*" target="lib\net5.0" />

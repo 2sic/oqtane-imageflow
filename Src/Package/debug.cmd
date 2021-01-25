@@ -1,10 +1,6 @@
 @REM By convention if you place the oqtane module root folder at the same level as the oqtane framework, then you will not have to modify any folder configuration.
-XCOPY "..\Client\bin\Debug\net5.0\ToSic.ImageFlow.Oqt.Client.Oqtane.dll" "..\..\..\oqtane.framework\Oqtane.Server\bin\Debug\net5.0\" /Y
-XCOPY "..\Client\bin\Debug\net5.0\ToSic.ImageFlow.Oqt.Client.Oqtane.pdb" "..\..\..\oqtane.framework\Oqtane.Server\bin\Debug\net5.0\" /Y
 XCOPY "..\Server\bin\Debug\net5.0\ToSic.ImageFlow.Oqt.Server.Oqtane.dll" "..\..\..\oqtane.framework\Oqtane.Server\bin\Debug\net5.0\" /Y
 XCOPY "..\Server\bin\Debug\net5.0\ToSic.ImageFlow.Oqt.Server.Oqtane.pdb" "..\..\..\oqtane.framework\Oqtane.Server\bin\Debug\net5.0\" /Y
-XCOPY "..\Shared\bin\Debug\net5.0\ToSic.ImageFlow.Oqt.Shared.Oqtane.dll" "..\..\..\oqtane.framework\Oqtane.Server\bin\Debug\net5.0\" /Y
-XCOPY "..\Shared\bin\Debug\net5.0\ToSic.ImageFlow.Oqt.Shared.Oqtane.pdb" "..\..\..\oqtane.framework\Oqtane.Server\bin\Debug\net5.0\" /Y
 XCOPY "..\Server\wwwroot\Modules\ToSic.ImageFlow.Oqt\*" "..\..\..\oqtane.framework\Oqtane.Server\wwwroot\Modules\ToSic.ImageFlow.Oqt\" /Y /S /I
 @REM nuget dependences
 XCOPY "..\packages\imageflow.server\0.5.6\lib\netcoreapp3.1\Imageflow.Server.dll" "..\..\..\oqtane.framework\Oqtane.Server\bin\Debug\net5.0\" /Y
@@ -21,4 +17,3 @@ XCOPY "..\packages\microsoft.extensions.logging.abstractions\5.0.0\lib\netstanda
 XCOPY "..\packages\microsoft.extensions.primitives\5.0.0\lib\netcoreapp3.0\Microsoft.Extensions.Primitives.dll" "..\..\..\oqtane.framework\Oqtane.Server\bin\Debug\net5.0\" /Y
 XCOPY "C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.extensions.fileproviders.abstractions\2.2.0\lib\netstandard2.0\Microsoft.Extensions.FileProviders.Abstractions.dll" "..\..\..\oqtane.framework\Oqtane.Server\bin\Debug\net5.0\" /Y
 XCOPY "C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.extensions.hosting.abstractions\2.2.0\lib\netstandard2.0\Microsoft.Extensions.Hosting.Abstractions.dll" "..\..\..\oqtane.framework\Oqtane.Server\bin\Debug\net5.0\" /Y
-

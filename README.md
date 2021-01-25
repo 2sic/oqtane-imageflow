@@ -3,8 +3,6 @@
 Image processing and optimizing middleware with querystring API for [Oqtane](https://www.oqtane.org/) 2.x.
 
 
-
-
 # Install Imageflow module in Oqtane
 
 Install it in standard way, as any other oqtane module.
@@ -41,7 +39,6 @@ Install it in standard way, as any other oqtane module.
 
 1. Or, from https://github.com/2sic/oqtane-imageflow/releases download latest _ToSic.ImageFlow.Oqt.x.x.x-*.nupkg_ and just copy _ToSic.ImageFlow.Oqt.x.x.x-*.nupkg_ package to your `Oqtane.Server\wwwroot\Modules\`
 
-
 # Develop ImageFlow module in Oqtane.Framework
 
 1. It is required to have [Oqtane.Framework](https://github.com/oqtane/oqtane.framework) development environment in folder **oqtane.framework**.
@@ -70,25 +67,6 @@ Install it in standard way, as any other oqtane module.
     ```
 
 
-# Optionally add ImageFlow module to Admin Dashboard
-
-1. Open your oqtane website in browser and login as host.
-
-1. Add new page ImageFlow to Admin dashboard with 'image' icon.
-
-    ![](Doc/images/add-page-imageflow.png)
-
-1. Open page ImageFlow from Admin dashboard.
-
-    ![](Doc/images/open-page-imageflow.png)
-
-1. Add new admin module ImageFlow to ImageFlow page.
-
-    ![](Doc/images/add-module-imageflow.png)
-
-1. If you can see all images under Querystring Examples than Imageflow is installed OK.
-
-    ![](Doc/images/imageflow-module.png)
 ## More info
 
 1. [Querystring API documentation](https://docs.imageflow.io/querystring/introduction.html)
