@@ -26,7 +26,7 @@ Install it in standard way, as any other oqtane module.
 1. Just copy _ToSic.Imageflow.Oqtane.x.x.x-*.nupkg_ package to your `Oqtane.Server\wwwroot\Modules\` and next oqtane website restart will auto-install Imageflow module as part of oqtane application startup process.
 
 
-# TODO - Development in Oqtane.Framework with Imageflow nuget dependency
+# Development in Oqtane.Framework with Imageflow nuget dependency
 
 1. It is required to have [Oqtane.Framework](https://github.com/oqtane/oqtane.framework) development environment in folder **oqtane.framework**.
     ```
