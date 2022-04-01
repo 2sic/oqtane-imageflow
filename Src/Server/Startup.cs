@@ -1,16 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Imageflow.Fluent;
+﻿using Imageflow.Fluent;
 using Imageflow.Server;
 using Imageflow.Server.HybridCache;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection.Extensions;
 using Oqtane.Infrastructure;
+using System;
+using ToSic.Imageflow.Oqtane.Server;
+using ToSic.Sxc.Services;
 
 namespace ToSic.Imageflow.Oqt.Server
 {
@@ -32,10 +30,15 @@ namespace ToSic.Imageflow.Oqt.Server
                     // The maximum size of the cache (1GB)
                     CacheSizeLimitInBytes = 1024 * 1024 * 1024,
                 });
+
+            // 2sxc will provide its own implementation, this one is just for fallback
+            services.TryAddTransient<IImageflowRewriteService, NothingRewriteService>();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            app.UseImageflowRewrite();
+            //app.UseLogger();
             app.UseImageflow(new ImageflowMiddlewareOptions()
                 .SetMapWebRoot(true)
                 .SetMyOpenSourceProjectUrl("https://github.com/2sic/oqtane-imageflow")

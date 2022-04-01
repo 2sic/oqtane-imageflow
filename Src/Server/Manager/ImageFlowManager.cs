@@ -1,20 +1,11 @@
-using System.Collections.Generic;
-using System.Linq;
-using System.Text.Json;
-using Oqtane.Modules;
-using Oqtane.Models;
 using Oqtane.Infrastructure;
-using Oqtane.Repository;
+using Oqtane.Models;
+using Oqtane.Modules;
 
 namespace ToSic.Imageflow.Oqt.Manager
 {
     public class ImageflowManager : IInstallable, IPortable
     {
-        public ImageflowManager()
-        {
-
-        }
-
         public bool Install(Tenant tenant, string version)
         {
             return true;

@@ -29,4 +29,12 @@
     <PackageReference Include="Oqtane.Server" Version="2.0.0" />
     <PackageReference Include="Oqtane.Shared" Version="2.0.0" />
   </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="ToSic.Sxc">
+      <HintPath>..\..\..\..\2sxc\Src\Sxc\ToSic.Sxc\bin\Debug\netstandard2.0\ToSic.Sxc.dll</HintPath>
+      <CopyLocal>False</CopyLocal>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+  </ItemGroup>
 </Project>
