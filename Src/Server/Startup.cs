@@ -4,11 +4,8 @@ using Imageflow.Server.HybridCache;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.DependencyInjection.Extensions;
 using Oqtane.Infrastructure;
 using System;
-using ToSic.Imageflow.Oqtane.Server;
-using ToSic.Sxc.Services;
 
 namespace ToSic.Imageflow.Oqt.Server
 {
@@ -30,15 +27,19 @@ namespace ToSic.Imageflow.Oqt.Server
                     // The maximum size of the cache (1GB)
                     CacheSizeLimitInBytes = 1024 * 1024 * 1024,
                 });
-
-            // 2sxc will provide its own implementation, this one is just for fallback
-            services.TryAddTransient<IImageflowRewriteService, NothingRewriteService>();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            app.UseImageflowRewrite();
-            //app.UseLogger();
+            // Optional registration of ImageflowRewriteMiddleware (eg from 2sxc oqtane module).
+            // IPreregisterImageFlowMiddleware implementation enables dynamic registration of
+            // ImageflowRewriteMiddleware to be executed in request pipeline exactly before
+            // main imageflow middleware because it need to rewrite query string params before
+            // imageflow middleware take a care of them.
+            foreach (var middleware in app.ApplicationServices.GetServices<IPreregisterImageFlowMiddleware>())
+                middleware.Register(app);
+
+            // main imageflow middleware
             app.UseImageflow(new ImageflowMiddlewareOptions()
                 .SetMapWebRoot(true)
                 .SetMyOpenSourceProjectUrl("https://github.com/2sic/oqtane-imageflow")
