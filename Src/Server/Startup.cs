@@ -1,16 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Imageflow.Fluent;
+﻿using Imageflow.Fluent;
 using Imageflow.Server;
 using Imageflow.Server.HybridCache;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using Oqtane.Infrastructure;
+using System;
 
 namespace ToSic.Imageflow.Oqt.Server
 {
@@ -36,6 +31,15 @@ namespace ToSic.Imageflow.Oqt.Server
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            // Optional registration of ImageflowRewriteMiddleware (eg from 2sxc oqtane module).
+            // IPreregisterImageFlowMiddleware implementation enables dynamic registration of
+            // ImageflowRewriteMiddleware to be executed in request pipeline exactly before
+            // main imageflow middleware because it need to rewrite query string params before
+            // imageflow middleware take a care of them.
+            foreach (var middleware in app.ApplicationServices.GetServices<IPreregisterImageFlowMiddleware>())
+                middleware.Register(app);
+
+            // main imageflow middleware
             app.UseImageflow(new ImageflowMiddlewareOptions()
                 .SetMapWebRoot(true)
                 .SetMyOpenSourceProjectUrl("https://github.com/2sic/oqtane-imageflow")

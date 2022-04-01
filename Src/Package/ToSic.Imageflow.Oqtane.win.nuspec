@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>ToSic.Imageflow.Oqtane</id>
-    <version>1.0.3</version>
+    <version>1.0.4</version>
     <authors>2sic</authors>
     <owners>2sic</owners>
     <title>2sic Imageflow image processing and optimizing middleware (win runtimes)</title>
@@ -21,10 +21,10 @@
       Recommendation is to install only packages that targets platforms in use.
       Installing more packages in same oqtane installation will effectively append runtime dependence from last package.
 
-      - ToSic.Imageflow.Oqtane.1.0.3-all.nupkg (23.3 MB)  - all runtimes,
-      - ToSic.Imageflow.Oqtane.1.0.3-linux.nupkg (16.9 MB) - linux, unix runtimes,
-      - ToSic.Imageflow.Oqtane.1.0.3-osx.nupkg (2.76 MB) - osx runtime,
-      - ToSic.Imageflow.Oqtane.1.0.3-win.nupkg (4.08 MB) - win runtimes.
+      - ToSic.Imageflow.Oqtane.1.0.4-all.nupkg (23.3 MB)  - all runtimes,
+      - ToSic.Imageflow.Oqtane.1.0.4-linux.nupkg (16.9 MB) - linux, unix runtimes,
+      - ToSic.Imageflow.Oqtane.1.0.4-osx.nupkg (2.76 MB) - osx runtime,
+      - ToSic.Imageflow.Oqtane.1.0.4-win.nupkg (4.08 MB) - win runtimes.
     </releaseNotes>
     <dependencies>
       <group targetFramework=".NETCoreApp5.0">

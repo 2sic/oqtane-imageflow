@@ -4,7 +4,7 @@
     <TargetFramework>net5.0</TargetFramework>
     <LangVersion>7.3</LangVersion>
     <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
-    <Version>1.0.3</Version>
+    <Version>1.0.4</Version>
     <Product>ToSic.Imageflow.Oqtane</Product>
     <Authors>2sic</Authors>
     <Company>2sic</Company>
