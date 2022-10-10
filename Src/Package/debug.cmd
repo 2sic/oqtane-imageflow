@@ -1,19 +1,39 @@
 @REM By convention if you place the oqtane module root folder at the same level as the oqtane framework, then you will not have to modify any folder configuration.
-XCOPY "..\Server\bin\Debug\net5.0\ToSic.Imageflow.Oqt.Server.Oqtane.dll" "..\..\..\oqtane.framework\Oqtane.Server\bin\Debug\net5.0\" /Y
-XCOPY "..\Server\bin\Debug\net5.0\ToSic.Imageflow.Oqt.Server.Oqtane.pdb" "..\..\..\oqtane.framework\Oqtane.Server\bin\Debug\net5.0\" /Y
+XCOPY "..\Server\bin\Debug\net6.0\ToSic.Imageflow.Oqt.Server.Oqtane.dll" "..\..\..\oqtane.framework\Oqtane.Server\bin\Debug\net6.0\" /Y
+XCOPY "..\Server\bin\Debug\net6.0\ToSic.Imageflow.Oqt.Server.Oqtane.pdb" "..\..\..\oqtane.framework\Oqtane.Server\bin\Debug\net6.0\" /Y
 XCOPY "..\Server\wwwroot\Modules\ToSic.Imageflow.Oqtane\*" "..\..\..\oqtane.framework\Oqtane.Server\wwwroot\Modules\ToSic.Imageflow.Oqtane\" /Y /S /I
-@REM nuget dependences
-XCOPY "..\packages\imageflow.server\0.5.6\lib\netcoreapp3.1\Imageflow.Server.dll" "..\..\..\oqtane.framework\Oqtane.Server\bin\Debug\net5.0\" /Y
-XCOPY "..\packages\imageflow.server.hybridcache\0.5.6\lib\netcoreapp3.1\Imageflow.Server.HybridCache.dll" "..\..\..\oqtane.framework\Oqtane.Server\bin\Debug\net5.0\" /Y
-XCOPY "..\packages\imageflow.net\0.7.21\lib\netstandard2.0\Imageflow.Net.dll" "..\..\..\oqtane.framework\Oqtane.Server\bin\Debug\net5.0\" /Y
-XCOPY "..\packages\imageflow.nativeruntime.win-x86_64\1.5.5-rc59\runtimes\win-x64\native\imageflow.dll" "..\..\..\oqtane.framework\Oqtane.Server\bin\Debug\net5.0\runtimes\win-x64\native\" /Y
-XCOPY "..\packages\imazen.common\0.5.6\lib\netstandard2.0\Imazen.Common.dll" "..\..\..\oqtane.framework\Oqtane.Server\bin\Debug\net5.0\" /Y
-XCOPY "..\packages\imazen.hybridcache\0.5.6\lib\netstandard2.0\Imazen.HybridCache.dll" "..\..\..\oqtane.framework\Oqtane.Server\bin\Debug\net5.0\" /Y
-XCOPY "..\packages\microsoft.io.recyclablememorystream\1.2.2\lib\netstandard1.4\Microsoft.IO.RecyclableMemoryStream.dll" "..\..\..\oqtane.framework\Oqtane.Server\bin\Debug\net5.0\" /Y
-XCOPY "..\packages\newtonsoft.json\12.0.2\lib\netstandard2.0\Newtonsoft.Json.dll" "..\..\..\oqtane.framework\Oqtane.Server\bin\Debug\net5.0\" /Y
-XCOPY "..\packages\microsoft.extensions.configuration.abstractions\5.0.0\lib\netstandard2.0\Microsoft.Extensions.Configuration.Abstractions.dll" "..\..\..\oqtane.framework\Oqtane.Server\bin\Debug\net5.0\" /Y
-XCOPY "..\packages\microsoft.extensions.dependencyinjection.abstractions\5.0.0\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll" "..\..\..\oqtane.framework\Oqtane.Server\bin\Debug\net5.0\" /Y
-XCOPY "..\packages\microsoft.extensions.logging.abstractions\5.0.0\lib\netstandard2.0\Microsoft.Extensions.Logging.Abstractions.dll" "..\..\..\oqtane.framework\Oqtane.Server\bin\Debug\net5.0\" /Y
-XCOPY "..\packages\microsoft.extensions.primitives\5.0.0\lib\netcoreapp3.0\Microsoft.Extensions.Primitives.dll" "..\..\..\oqtane.framework\Oqtane.Server\bin\Debug\net5.0\" /Y
-XCOPY "C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.extensions.fileproviders.abstractions\2.2.0\lib\netstandard2.0\Microsoft.Extensions.FileProviders.Abstractions.dll" "..\..\..\oqtane.framework\Oqtane.Server\bin\Debug\net5.0\" /Y
-XCOPY "C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.extensions.hosting.abstractions\2.2.0\lib\netstandard2.0\Microsoft.Extensions.Hosting.Abstractions.dll" "..\..\..\oqtane.framework\Oqtane.Server\bin\Debug\net5.0\" /Y
+@REM *** nuget dependences - imageflow, imazen
+@REM Imageflow.Server 0.7.7
+XCOPY "..\packages\imageflow.server\0.7.7\lib\netcoreapp3.1\Imageflow.Server.dll" "..\..\..\oqtane.framework\Oqtane.Server\bin\Debug\net6.0\" /Y
+@REM Imageflow.Server.HybridCache 0.7.7
+XCOPY "..\packages\imageflow.server.hybridcache\0.7.7\lib\netcoreapp3.1\Imageflow.Server.HybridCache.dll" "..\..\..\oqtane.framework\Oqtane.Server\bin\Debug\net6.0\" /Y
+@REM Imazen.Common (>= 0.7.7)
+XCOPY "..\packages\imazen.common\0.7.7\lib\netstandard2.0\Imazen.Common.dll" "..\..\..\oqtane.framework\Oqtane.Server\bin\Debug\net6.0\" /Y
+@REM Imazen.HybridCache (>= 0.7.7) 
+XCOPY "..\packages\imazen.hybridcache\0.7.7\lib\netstandard2.0\Imazen.HybridCache.dll" "..\..\..\oqtane.framework\Oqtane.Server\bin\Debug\net6.0\" /Y
+@REM Imageflow.AllPlatforms (>= 0.8.3) 
+XCOPY "..\packages\imageflow.allplatforms\0.8.3\lib\netstandard2.0\Imageflow.AllPlatforms.dll" "..\..\..\oqtane.framework\Oqtane.Server\bin\Debug\net6.0\" /Y
+@REM Imageflow.Net (>= 0.8.3)
+XCOPY "..\packages\imageflow.net\0.9.0\lib\netstandard2.0\Imageflow.Net.dll" "..\..\..\oqtane.framework\Oqtane.Server\bin\Debug\net6.0\" /Y
+@REM Imageflow.NativeRuntime.osx-x86_64 (>= 1.7.3-rc67)
+@REM Imageflow.NativeRuntime.ubuntu-x86_64 (>= 1.7.3-rc67)
+@REM Imageflow.NativeRuntime.win-x86 (>= 1.7.3-rc67)
+@REM Imageflow.NativeRuntime.win-x86_64 (>= 1.7.3-rc67) 
+XCOPY "..\packages\imageflow.nativeruntime.win-x86_64\1.7.3-rc67\runtimes\win-x64\native\imageflow.dll" "..\..\..\oqtane.framework\Oqtane.Server\bin\Debug\net6.0\runtimes\win-x64\native\" /Y
+@REM Microsoft.IO.RecyclableMemoryStream (>= 1.2.2 && < 3.0.0) 
+XCOPY "..\packages\microsoft.io.recyclablememorystream\1.2.2\lib\netstandard1.4\Microsoft.IO.RecyclableMemoryStream.dll" "..\..\..\oqtane.framework\Oqtane.Server\bin\Debug\net6.0\" /Y
+@REM *** nuget dependences that are already in Oqtane 3.2.0
+@REM Microsoft.CSharp (>= 4.7.0)
+@REM Microsoft.Extensions.Hosting.Abstractions (>= 2.2.0)
+@REM Microsoft.Bcl.AsyncInterfaces (>= 6.0.0)
+@REM Microsoft.Extensions.Configuration.Abstractions (>= 6.0.0)
+@REM Microsoft.Extensions.DependencyInjection.Abstractions (>= 6.0.0)
+@REM Microsoft.Extensions.FileProviders.Abstractions (>= 6.0.0)
+@REM Microsoft.Extensions.Primitives (>= 6.0.0)
+@REM System.Buffers (>= 4.5.1)
+@REM System.Memory (>= 4.5.5)
+@REM System.Numerics.Vectors (>= 4.4.0)
+@REM System.Runtime.CompilerServices.Unsafe (>= 6.0.0)
+@REM System.Threading.Tasks.Extensions (>= 4.5.4)
+@REM System.ValueTuple (>= 4.5.0)
+@REM Newtonsoft.Json (>= 10.0.3 && < 14.0.0)

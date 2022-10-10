@@ -2,12 +2,12 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>ToSic.Imageflow.Oqtane</id>
-    <version>1.0.4</version>
+    <version>1.1.0</version>
     <authors>2sic</authors>
     <owners>2sic</owners>
     <title>2sic Imageflow image processing and optimizing middleware (win runtimes)</title>
     <description>Oqtane module with Imageflow.NET Server middleware for fetching, processing, and caching images on-demand.</description>
-    <summary>Imageflow.NET Server image processing and optimizing middleware with querystring API for Oqtane 2.x.</summary>
+    <summary>Imageflow.NET Server image processing and optimizing middleware with querystring API for Oqtane 3.2</summary>
     <copyright>2sic</copyright>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <license type="expression">MIT</license>
@@ -21,27 +21,27 @@
       Recommendation is to install only packages that targets platforms in use.
       Installing more packages in same oqtane installation will effectively append runtime dependence from last package.
 
-      - ToSic.Imageflow.Oqtane.1.0.4-all.nupkg (23.3 MB)  - all runtimes,
-      - ToSic.Imageflow.Oqtane.1.0.4-linux.nupkg (16.9 MB) - linux, unix runtimes,
-      - ToSic.Imageflow.Oqtane.1.0.4-osx.nupkg (2.76 MB) - osx runtime,
-      - ToSic.Imageflow.Oqtane.1.0.4-win.nupkg (4.08 MB) - win runtimes.
+      - ToSic.Imageflow.Oqtane.1.1.0-all.nupkg (23.3 MB)  - all runtimes,
+      - ToSic.Imageflow.Oqtane.1.1.0-linux.nupkg (16.9 MB) - linux, unix runtimes,
+      - ToSic.Imageflow.Oqtane.1.1.0-osx.nupkg (2.76 MB) - osx runtime,
+      - ToSic.Imageflow.Oqtane.1.1.0-win.nupkg (4.08 MB) - win runtimes.
     </releaseNotes>
     <dependencies>
-      <group targetFramework=".NETCoreApp5.0">
-        <!--<dependency id="Oqtane.Framework" version="2.0.0" />-->
-        <dependency id="Imageflow.Server" version="0.5.6" exclude="Build,Analyzers" />
-        <dependency id="Imageflow.Server.HybridCache" version="0.5.6" exclude="Build,Analyzers" />
+      <group targetFramework=".NETCoreApp6.0">
+        <!--<dependency id="Oqtane.Framework" version="3.2.0" />-->
+        <dependency id="Imageflow.Server" version="0.7.7" exclude="Build,Analyzers" />
+        <dependency id="Imageflow.Server.HybridCache" version="0.7.7" exclude="Build,Analyzers" />
       </group>
     </dependencies>
   </metadata>
   <files>
     <file src="images\icon.jpg" target="images\" />
-    <file src="..\Server\bin\Release\net5.0\ToSic.Imageflow.Oqt.Server.Oqtane.dll" target="lib\net5.0" />
-    <file src="..\Server\bin\Release\net5.0\ToSic.Imageflow.Oqt.Server.Oqtane.pdb" target="lib\net5.0" />
-    <file src="..\Server\bin\Release\net5.0\publish\Imageflow.*" target="lib\net5.0" />
-    <file src="..\Server\bin\Release\net5.0\publish\Imazen.*" target="lib\net5.0" />
-    <file src="..\Server\bin\Release\net5.0\publish\Microsoft.IO.*" target="lib\net5.0" />
-    <file src="..\Server\bin\Release\net5.0\publish\runtimes\win*\**\*imageflow.*" target="runtimes" />
+    <file src="..\Server\bin\Release\net6.0\ToSic.Imageflow.Oqt.Server.Oqtane.dll" target="lib\net6.0" />
+    <file src="..\Server\bin\Release\net6.0\ToSic.Imageflow.Oqt.Server.Oqtane.pdb" target="lib\net6.0" />
+    <file src="..\Server\bin\Release\net6.0\publish\Imageflow.*" target="lib\net6.0" />
+    <file src="..\Server\bin\Release\net6.0\publish\Imazen.*" target="lib\net6.0" />
+    <file src="..\Server\bin\Release\net6.0\publish\Microsoft.IO.*" target="lib\net6.0" />
+    <file src="..\Server\bin\Release\net6.0\publish\runtimes\win*\**\*imageflow.*" target="runtimes" />
     <file src="..\Server\wwwroot\**\*.*" target="wwwroot" />
   </files>
 </package>
