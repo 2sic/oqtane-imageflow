@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+<package>
   <metadata>
     <id>ToSic.Imageflow.Oqtane</id>
     <version>1.1.0</version>
@@ -7,7 +7,6 @@
     <owners>2sic internet solutions GmbH, Switzerland</owners>
     <title>2sic Imageflow image processing and optimizing middleware (all runtimes)</title>
     <description>Oqtane module with Imageflow.NET Server middleware for fetching, processing, and caching images on-demand.</description>
-    <summary>Imageflow.NET Server image processing and optimizing middleware with querystring API for Oqtane 3.2</summary>
     <copyright>Copyright MIT © 2sic 2022</copyright>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <license type="expression">MIT</license>
@@ -18,6 +17,7 @@
     <tags>oqtane module</tags>
     <readme>docs\README.md</readme>
     <releaseNotes>https://github.com/2sic/oqtane-imageflow/releases</releaseNotes>
+    <summary>Imageflow.NET Server image processing and optimizing middleware with querystring API for Oqtane 3.2</summary>
     <dependencies>
       <dependency id="Oqtane.Framework" version="3.2.0" />
       <dependency id="Imageflow.Server" version="0.7.7" exclude="Build,Analyzers" />
@@ -26,7 +26,8 @@
   </metadata>
   <files>
     <file src="images\icon.jpg" target="images\" />
-    <file src="README.md" target="docs\" />
+    <file src="..\..\README.md" target="docs\" />
+    <file src="..\..\Doc\**\*" target="docs\doc" />
     <file src="..\Server\bin\Release\net6.0\ToSic.Imageflow.Oqt.Server.Oqtane.dll" target="lib\net6.0" />
     <file src="..\Server\bin\Release\net6.0\ToSic.Imageflow.Oqt.Server.Oqtane.pdb" target="lib\net6.0" />
     <file src="..\Server\bin\Release\net6.0\publish\Imageflow.*" target="lib\net6.0" />
