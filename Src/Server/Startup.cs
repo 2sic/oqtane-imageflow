@@ -18,7 +18,7 @@ namespace ToSic.Imageflow.Oqt.Server
             // If you're deploying to azure, provide a disk cache folder *not* inside ContentRootPath
             // to prevent the app from recycling whenever folders are created.
             services.AddImageflowHybridCache(
-                new HybridCacheOptions("imageflow_hybrid_cache")
+                new HybridCacheOptions("App_Data/imageflow_hybrid_cache")
                 {
                     // How long after a file is created before it can be deleted
                     MinAgeToDelete = TimeSpan.FromSeconds(10),
