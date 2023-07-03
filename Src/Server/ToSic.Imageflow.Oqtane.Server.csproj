@@ -1,32 +1,26 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
 
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
-    <LangVersion>7.3</LangVersion>
+    <TargetFramework>net7.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
     <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
-    <Version>1.1.0</Version>
+    <Version>1.2.0</Version>
     <Product>ToSic.Imageflow.Oqtane</Product>
     <Authors>2sic</Authors>
     <Company>2sic</Company>
-    <Description>Imageflow.NET Server image processing and optimizing middleware with querystring API for Oqtane 3.2.x.</Description>
+    <Description>Imageflow.NET Server image processing and optimizing middleware with querystring API for Oqtane 4</Description>
     <Copyright>2sic</Copyright>
     <AssemblyName>ToSic.Imageflow.Oqt.Server.Oqtane</AssemblyName>
     <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Imageflow.Server" Version="0.7.7" />
-    <PackageReference Include="Imageflow.Server.HybridCache" Version="0.7.7" />
-    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="6.0.3" />
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="6.0.3" />
-    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.3" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.3" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.3" />
-    <PackageReference Include="Microsoft.Extensions.Localization" Version="6.0.3" />
+    <PackageReference Include="Imageflow.Server" Version="0.8.1" />
+    <PackageReference Include="Imageflow.Server.HybridCache" Version="0.8.1" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Oqtane.Server" Version="3.2.0" />
-    <PackageReference Include="Oqtane.Shared" Version="3.2.0" />
+    <PackageReference Include="Oqtane.Server" Version="4.0.0" />
+    <PackageReference Include="Oqtane.Shared" Version="4.0.0" />
   </ItemGroup>
 </Project>
