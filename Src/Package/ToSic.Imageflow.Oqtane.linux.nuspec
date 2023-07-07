@@ -37,7 +37,7 @@
     <file src="..\Server\bin\Release\net7.0\publish\Microsoft.IO.*" target="lib\net7.0" />
     <file src="..\Server\bin\Release\net7.0\publish\Newtonsoft.Json.dll" target="lib\net7.0" />
     <file src="..\Server\bin\Release\net7.0\publish\runtimes\linux*\**\*imageflow.*" target="runtimes" />
-    <file src="..\Server\bin\Release\net7.0\publish\runtimes\unix\**\*imageflow.*" target="runtimes" />
+    <!--<file src="..\Server\bin\Release\net7.0\publish\runtimes\unix\**\*imageflow.*" target="runtimes" />-->
     <file src="..\Server\wwwroot\Modules\ToSic.Imageflow.Oqtane\**\*.*" exclude="**\*.map;" target="wwwroot\Modules\ToSic.Imageflow.Oqtane" />
   </files>
 </package>
