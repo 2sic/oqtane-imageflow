@@ -4,7 +4,7 @@
     <TargetFramework>net7.0</TargetFramework>
     <LangVersion>latest</LangVersion>
     <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
-    <Version>1.2.0</Version>
+    <Version>1.11.0</Version>
     <Product>ToSic.Imageflow.Oqtane</Product>
     <Authors>2sic</Authors>
     <Company>2sic</Company>
@@ -15,8 +15,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Imageflow.Server" Version="0.8.1" />
-    <PackageReference Include="Imageflow.Server.HybridCache" Version="0.8.1" />
+    <PackageReference Include="Imageflow.Server" Version="0.8.3" />
+    <PackageReference Include="Imageflow.Server.HybridCache" Version="0.8.3" />
   </ItemGroup>
 
   <ItemGroup>
