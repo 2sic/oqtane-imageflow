@@ -1,9 +1,13 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net7.0</TargetFramework>
+    <TargetFramework>net9.0</TargetFramework>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
-    <Version>1.11.0</Version>
+    <Version>1.12.0</Version>
+    
+    <OqtaneRoot>..\..\..\oqtane.framework\Oqtane.Server\</OqtaneRoot>
+    <OqtaneInstallPackage>..\..\InstallPackages</OqtaneInstallPackage>
+    <ProjectName>$([System.String]::Copy('$(MSBuildProjectName)').Replace('.Package',''))</ProjectName>
   </PropertyGroup>
 
   <ItemGroup>
@@ -11,8 +15,18 @@
   </ItemGroup>
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="IF $(ConfigurationName) == Debug (debug.cmd)" />
-    <Exec Command="IF $(ConfigurationName) == Release (release.cmd)" />
+    
+    <Message Text="------------------------------------------------------------------------------" Importance="high" />
+    <Message Text="ConfigurationName='$(ConfigurationName)'" Importance="High" />
+    <Message Text="OqtaneRoot='$(OqtaneRoot)'" Importance="High" />
+    <Message Text="TargetFramework='$(TargetFramework)'" Importance="High" />
+    <Message Text="ProjectName='$(ProjectName)'" Importance="High" />
+    <Message Text="OqtaneInstallPackage='$(OqtaneInstallPackage)'" Importance="High" />
+    <Message Text="------------------------------------------------------------------------------" Importance="high" />
+    
+    <Exec Command="IF $(ConfigurationName) == Debug (debug.cmd $(ConfigurationName) $(OqtaneRoot) $(TargetFramework))" />
+    <Exec Command="IF $(ConfigurationName) == Release (release.cmd $(ProjectName) $(OqtaneInstallPackage) $(TargetFramework))" />
+    
   </Target>
 
 </Project>

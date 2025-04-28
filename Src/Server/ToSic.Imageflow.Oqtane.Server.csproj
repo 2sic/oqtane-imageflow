@@ -1,26 +1,46 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
 
   <PropertyGroup>
-    <TargetFramework>net7.0</TargetFramework>
+    <TargetFramework>net9.0</TargetFramework>
     <LangVersion>latest</LangVersion>
     <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
-    <Version>1.11.0</Version>
+    <Version>1.12.0</Version>
     <Product>ToSic.Imageflow.Oqtane</Product>
     <Authors>2sic</Authors>
     <Company>2sic</Company>
-    <Description>Imageflow.NET Server image processing and optimizing middleware with querystring API for Oqtane 4</Description>
+    <Description>Imageflow.NET Server image processing and optimizing middleware with querystring API for Oqtane 6</Description>
     <Copyright>2sic</Copyright>
     <AssemblyName>ToSic.Imageflow.Oqt.Server.Oqtane</AssemblyName>
     <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <NoWarn>1701;1702;NU1701</NoWarn>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <NoWarn>1701;1702;NU1701</NoWarn>
+  </PropertyGroup>
+
   <ItemGroup>
+    <PackageReference Include="Imageflow.AllPlatforms" Version="0.14.0-rc01" />
+    <!-- START update Imageflow.AllPlatforms 0.14.0-rc01 dependencies to latest -->
+    <PackageReference Include="Imageflow.Net" Version="0.14.0-rc01" Exclude="Build,Analyzers" />
+    <PackageReference Include="Imageflow.NativeRuntime.osx-arm64" Version="2.1.0-rc11" Exclude="Build,Analyzers" />
+    <PackageReference Include="Imageflow.NativeRuntime.osx-x86_64" Version="2.1.0-rc11" Exclude="Build,Analyzers" />
+    <PackageReference Include="Imageflow.NativeRuntime.ubuntu-arm64" Version="2.1.0-rc07" Exclude="Build,Analyzers" />
+    <PackageReference Include="Imageflow.NativeRuntime.ubuntu-x86_64" Version="2.1.0-rc11" Exclude="Build,Analyzers" />
+    <PackageReference Include="Imageflow.NativeRuntime.win-arm64" Version="2.1.0-rc11" Exclude="Build,Analyzers" />
+    <PackageReference Include="Imageflow.NativeRuntime.win-x86" Version="2.1.0-rc11" Exclude="Build,Analyzers" />
+    <PackageReference Include="Imageflow.NativeRuntime.win-x86_64" Version="2.1.0-rc11" Exclude="Build,Analyzers" />
+    <!-- END update Imageflow.AllPlatforms 0.14.0-rc01 dependencies to latest -->
+    
     <PackageReference Include="Imageflow.Server" Version="0.8.3" />
     <PackageReference Include="Imageflow.Server.HybridCache" Version="0.8.3" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Oqtane.Server" Version="4.0.0" />
-    <PackageReference Include="Oqtane.Shared" Version="4.0.0" />
+    <PackageReference Include="Oqtane.Server" Version="6.0.1" />
+    <PackageReference Include="Oqtane.Shared" Version="6.0.1" />
   </ItemGroup>
 </Project>

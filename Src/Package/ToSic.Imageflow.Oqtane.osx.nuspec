@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package>
   <metadata>
-    <id>ToSic.Imageflow.Oqtane</id>
-    <version>1.11.0</version>
+    <id>$projectname$</id>
+    <version>1.12.0</version>
     <authors>2sic internet solutions GmbH, Switzerland</authors>
     <owners>2sic internet solutions GmbH, Switzerland</owners>
     <title>2sic Imageflow image processing and optimizing middleware (osx)</title>
     <description>Oqtane module with Imageflow.NET Server middleware for fetching, processing, and caching images on-demand.</description>
-    <copyright>Copyright MIT © 2sic 2024</copyright>
+    <copyright>Copyright MIT © 2sic 2025</copyright>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <license type="expression">MIT</license>
     <projectUrl>https://github.com/2sic/oqtane-imageflow</projectUrl>
@@ -17,10 +17,10 @@
     <tags>oqtane module</tags>
     <readme>docs\README.md</readme>
     <releaseNotes>https://github.com/2sic/oqtane-imageflow/releases</releaseNotes>
-    <summary>Imageflow.NET Server image processing and optimizing middleware with querystring API for Oqtane 4</summary>
+    <summary>Imageflow.NET Server image processing and optimizing middleware with querystring API for Oqtane 6</summary>
     <dependencies>
-      <group targetFramework="net7.0">
-        <dependency id="Oqtane.Framework" version="4.0.0" />
+      <group targetFramework="net9.0">
+        <dependency id="Oqtane.Framework" version="6.0.1" />
         <dependency id="Imageflow.Server" version="0.8.3" exclude="Build,Analyzers" />
         <dependency id="Imageflow.Server.HybridCache" version="0.8.3" exclude="Build,Analyzers" />
       </group>
@@ -30,13 +30,12 @@
     <file src="images\icon.jpg" target="images\" />
     <file src="..\..\README.md" target="docs\" />
     <file src="..\..\Doc\**\*" target="docs\doc" />
-    <file src="..\Server\bin\Release\net7.0\ToSic.Imageflow.Oqt.Server.Oqtane.dll" target="lib\net7.0" />
-    <file src="..\Server\bin\Release\net7.0\ToSic.Imageflow.Oqt.Server.Oqtane.pdb" target="lib\net7.0" />
-    <file src="..\Server\bin\Release\net7.0\publish\Imageflow.*" target="lib\net7.0" />
-    <file src="..\Server\bin\Release\net7.0\publish\Imazen.*" target="lib\net7.0" />
-    <file src="..\Server\bin\Release\net7.0\publish\Microsoft.IO.*" target="lib\net7.0" />
-    <file src="..\Server\bin\Release\net7.0\publish\Newtonsoft.Json.dll" target="lib\net7.0" />
-    <file src="..\Server\bin\Release\net7.0\publish\runtimes\osx*\**\*imageflow.*" target="runtimes" />
-    <file src="..\Server\wwwroot\Modules\ToSic.Imageflow.Oqtane\**\*.*" exclude="**\*.map;" target="wwwroot\Modules\ToSic.Imageflow.Oqtane" />
+    <file src="..\Server\bin\Release\$targetframework$\ToSic.Imageflow.Oqt.Server.Oqtane.dll" target="lib\$targetframework$" />
+    <file src="..\Server\bin\Release\$targetframework$\ToSic.Imageflow.Oqt.Server.Oqtane.pdb" target="lib\$targetframework$" />
+    <file src="..\Server\bin\Release\$targetframework$\publish\Imageflow.*" target="lib\$targetframework$" />
+    <file src="..\Server\bin\Release\$targetframework$\publish\Imazen.*" target="lib\$targetframework$" />
+    <file src="..\Server\bin\Release\$targetframework$\publish\Microsoft.IO.*" target="lib\$targetframework$" />
+    <file src="..\Server\bin\Release\$targetframework$\publish\runtimes\osx*\**\*imageflow.*" target="runtimes" />
+    <file src="..\Server\wwwroot\Modules\$projectname$\**\*.*" exclude="**\*.map;" target="wwwroot\Modules\$projectname$" />
   </files>
 </package>
