@@ -1,6 +1,6 @@
 # 2sic Imageflow Oqtane module middleware
 
-[Imageflow.NET Server](https://github.com/imazen/imageflow-dotnet-server) image processing and optimizing middleware with querystring API for [Oqtane](https://www.oqtane.org/) 4
+[Imageflow.NET Server](https://github.com/imazen/imageflow-dotnet-server) image processing and optimizing middleware with querystring API for [Oqtane](https://www.oqtane.org/)
 
 ## Release notes
 
@@ -8,10 +8,10 @@ Because nuget package with dependencies for all runtimes is very big separate sm
 Recommendation is to install only packages that targets platforms in use.
 Installing more packages in same oqtane installation will effectively append runtime dependence from last package.
 
-- ToSic.Imageflow.Oqtane.x.x.x-all.nupkg (28 MB)  - all runtimes,
-- ToSic.Imageflow.Oqtane.x.x.x-linux.nupkg (22 MB) - linux, unix runtimes,
-- ToSic.Imageflow.Oqtane.x.x.x-osx.nupkg (4 MB) - osx runtime,
-- ToSic.Imageflow.Oqtane.x.x.x-win.nupkg (5 MB) - win runtimes.
+- ToSic.Imageflow.Oqtane.x.x.x.nupkg (16 MB)  - all runtimes,
+- ToSic.Imageflow.Oqtane.x.x.x-linux.nupkg (5 MB) - linux, unix runtimes,
+- ToSic.Imageflow.Oqtane.x.x.x-osx.nupkg (5 MB) - osx runtime,
+- ToSic.Imageflow.Oqtane.x.x.x-win.nupkg (6 MB) - win runtimes.
 
 ## Install Imageflow module in Oqtane
 
