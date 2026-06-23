@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>net9.0</TargetFramework>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
-    <Version>1.12.0</Version>
+    <Version>1.12.1</Version>
     
     <OqtaneRoot>..\..\..\oqtane.framework\Oqtane.Server\</OqtaneRoot>
     <OqtaneInstallPackage>..\..\InstallPackages</OqtaneInstallPackage>

@@ -4,7 +4,7 @@
     <TargetFramework>net9.0</TargetFramework>
     <LangVersion>latest</LangVersion>
     <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
-    <Version>1.12.0</Version>
+    <Version>1.12.1</Version>
     <Product>ToSic.Imageflow.Oqtane</Product>
     <Authors>2sic</Authors>
     <Company>2sic</Company>
@@ -40,6 +40,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Oqtane.Client" Version="6.0.1" />
     <PackageReference Include="Oqtane.Server" Version="6.0.1" />
     <PackageReference Include="Oqtane.Shared" Version="6.0.1" />
   </ItemGroup>
