@@ -9,9 +9,9 @@ namespace ToSic.Imageflow.Oqt
         {
             Name = "Imageflow",
             Description = "Imageflow.NET Server image processing and optimizing middleware",
-            Version = "1.12.1",
+            Version = "1.13.0",
             ServerManagerType = "ToSic.Imageflow.Oqt.Manager.ImageflowManager, ToSic.Imageflow.Oqt.Server.Oqtane",
-            ReleaseVersions = "1.12.1"
+            ReleaseVersions = "1.13.0"
         };
     }
 }

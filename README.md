@@ -8,10 +8,10 @@ Because nuget package with dependencies for all runtimes is very big separate sm
 Recommendation is to install only packages that targets platforms in use.
 Installing more packages in same oqtane installation will effectively append runtime dependence from last package.
 
-- ToSic.Imageflow.Oqtane.x.x.x.nupkg (16 MB)  - all runtimes,
-- ToSic.Imageflow.Oqtane.x.x.x-linux.nupkg (5 MB) - linux, unix runtimes,
-- ToSic.Imageflow.Oqtane.x.x.x-osx.nupkg (5 MB) - osx runtime,
-- ToSic.Imageflow.Oqtane.x.x.x-win.nupkg (6 MB) - win runtimes.
+- ToSic.Imageflow.Oqtane.x.x.x.nupkg (19 MB)  - all runtimes,
+- ToSic.Imageflow.Oqtane.x.x.x-linux.nupkg (6 MB) - linux, unix runtimes,
+- ToSic.Imageflow.Oqtane.x.x.x-osx.nupkg (6 MB) - osx runtime,
+- ToSic.Imageflow.Oqtane.x.x.x-win.nupkg (8 MB) - win runtimes.
 
 ## Install Imageflow module in Oqtane
 

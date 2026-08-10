@@ -2,7 +2,7 @@
 <package>
   <metadata>
     <id>$projectname$</id>
-    <version>1.12.1</version>
+    <version>1.13.0</version>
     <authors>2sic internet solutions GmbH, Switzerland</authors>
     <owners>2sic internet solutions GmbH, Switzerland</owners>
     <title>2sic Imageflow image processing and optimizing middleware (all runtimes)</title>
@@ -21,8 +21,8 @@
     <dependencies>
       <group targetFramework="net9.0">
         <dependency id="Oqtane.Framework" version="6.0.1" />
-        <dependency id="Imageflow.Server" version="0.8.3" exclude="Build,Analyzers" />
-        <dependency id="Imageflow.Server.HybridCache" version="0.8.3" exclude="Build,Analyzers" />
+        <dependency id="Imageflow.Server" version="0.9.0" exclude="Build,Analyzers" />
+        <dependency id="Imageflow.Server.HybridCache" version="0.9.0" exclude="Build,Analyzers" />
       </group>
     </dependencies>
   </metadata>

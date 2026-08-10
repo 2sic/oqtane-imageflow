@@ -20,29 +20,33 @@ XCOPY "..\Server\bin\%BuildFolder%\%ModuleTargetFramework%\ToSic.Imageflow.Oqt.S
 XCOPY "..\Server\bin\%BuildFolder%\%ModuleTargetFramework%\ToSic.Imageflow.Oqt.Server.Oqtane.pdb" "%OqtaneBin%\" /Y
 XCOPY "..\Server\wwwroot\Modules\ToSic.Imageflow.Oqtane\*" "..\..\..\oqtane.framework\Oqtane.Server\wwwroot\Modules\ToSic.Imageflow.Oqtane\" /Y /S /I
 @REM *** nuget dependences - imageflow, imazen
-@REM Imageflow.Server 0.8.3
-XCOPY "..\packages\imageflow.server\0.8.3\lib\net6.0\Imageflow.Server.dll" "%OqtaneBin%\" /Y
-@REM Imageflow.Server.HybridCache 0.8.3
-XCOPY "..\packages\imageflow.server.hybridcache\0.8.3\lib\net6.0\Imageflow.Server.HybridCache.dll" "%OqtaneBin%\" /Y
-@REM Imazen.Common (>= 0.8.3)
-XCOPY "..\packages\imazen.common\0.8.3\lib\netstandard2.0\Imazen.Common.dll" "%OqtaneBin%\" /Y
-@REM Imazen.HybridCache (>= 0.8.3) 
-XCOPY "..\packages\imazen.hybridcache\0.8.3\lib\netstandard2.0\Imazen.HybridCache.dll" "%OqtaneBin%\" /Y
-@REM Imageflow.AllPlatforms (>= 0.14.0-rc01) 
-XCOPY "..\packages\imageflow.allplatforms\0.14.0-rc01\lib\net8.0\Imageflow.AllPlatforms.dll" "%OqtaneBin%\" /Y
-@REM Imageflow.Net (>= 0.14.0-rc01)
-XCOPY "..\packages\imageflow.net\0.14.0-rc01\lib\net8.0\Imageflow.Net.dll" "%OqtaneBin%\" /Y
-@REM Imageflow.NativeRuntime.osx-arm64 (>= 2.1.0-rc11)
-@REM Imageflow.NativeRuntime.osx-x86_64 (>= 2.1.0-rc11)
-@REM Imageflow.NativeRuntime.ubuntu-arm64 >= 2.1.0-rc07)
-@REM Imageflow.NativeRuntime.ubuntu-x86_64 >= 2.1.0-rc11)
-@REM Imageflow.NativeRuntime.win-arm64 (>= 2.1.0-rc11)
-XCOPY "..\packages\imageflow.nativeruntime.win-arm64\2.1.0-rc11\runtimes\win-arm64\native\imageflow.dll" "%OqtaneBin%\runtimes\win-arm64\native\" /Y
-@REM Imageflow.NativeRuntime.win-x86 (>= 2.1.0-rc11)
-XCOPY "..\packages\imageflow.nativeruntime.win-x86\2.1.0-rc11\runtimes\win-x86\native\imageflow.dll" "%OqtaneBin%\runtimes\win-x86\native\" /Y
-@REM Imageflow.NativeRuntime.win-x86_64 >= 2.1.0-rc11) 
-XCOPY "..\packages\imageflow.nativeruntime.win-x86_64\2.1.0-rc11\runtimes\win-x64\native\imageflow.dll" "%OqtaneBin%\runtimes\win-x64\native\" /Y
-@REM Microsoft.IO.RecyclableMemoryStream (>= 3.0.1 && < 4.0.0) 
-XCOPY "..\packages\microsoft.io.recyclablememorystream\3.0.1\lib\net6.0\Microsoft.IO.RecyclableMemoryStream.dll" "%OqtaneBin%\" /Y
+@REM Imageflow.Server
+XCOPY "..\Server\bin\%BuildFolder%\%ModuleTargetFramework%\Imageflow.Server.dll" "%OqtaneBin%\" /Y
+@REM Imageflow.Server.HybridCache
+XCOPY "..\Server\bin\%BuildFolder%\%ModuleTargetFramework%\Imageflow.Server.HybridCache.dll" "%OqtaneBin%\" /Y
+@REM Imazen.Common
+XCOPY "..\Server\bin\%BuildFolder%\%ModuleTargetFramework%\Imazen.Common.dll" "%OqtaneBin%\" /Y
+@REM Imazen.HybridCache
+XCOPY "..\Server\bin\%BuildFolder%\%ModuleTargetFramework%\Imazen.HybridCache.dll" "%OqtaneBin%\" /Y
+@REM Imageflow.AllPlatforms
+XCOPY "..\Server\bin\%BuildFolder%\%ModuleTargetFramework%\Imageflow.AllPlatforms.dll" "%OqtaneBin%\" /Y
+@REM Imageflow.Net
+XCOPY "..\Server\bin\%BuildFolder%\%ModuleTargetFramework%\Imageflow.Net.dll" "%OqtaneBin%\" /Y
+@REM Imageflow.NativeRuntime.linux-arm64
+XCOPY "..\Server\bin\%BuildFolder%\%ModuleTargetFramework%\runtimes\linux-arm64\native\libimageflow.so" "%OqtaneBin%\runtimes\linux-arm64\native\" /Y
+@REM Imageflow.NativeRuntime.linux-x64
+XCOPY "..\Server\bin\%BuildFolder%\%ModuleTargetFramework%\runtimes\linux-x64\native\libimageflow.so" "%OqtaneBin%\runtimes\linux-x64\native\" /Y
+@REM Imageflow.NativeRuntime.osx-arm64
+XCOPY "..\Server\bin\%BuildFolder%\%ModuleTargetFramework%\runtimes\osx-arm64\native\libimageflow.dylib" "%OqtaneBin%\runtimes\osx-arm64\native\" /Y
+@REM Imageflow.NativeRuntime.osx-x64
+XCOPY "..\Server\bin\%BuildFolder%\%ModuleTargetFramework%\runtimes\osx-x64\native\libimageflow.dylib" "%OqtaneBin%\runtimes\osx-x64\native\" /Y
+@REM Imageflow.NativeRuntime.win-arm64
+XCOPY "..\Server\bin\%BuildFolder%\%ModuleTargetFramework%\runtimes\win-arm64\native\imageflow.dll" "%OqtaneBin%\runtimes\win-arm64\native\" /Y
+@REM Imageflow.NativeRuntime.win-x64
+XCOPY "..\Server\bin\%BuildFolder%\%ModuleTargetFramework%\runtimes\win-x64\native\imageflow.dll" "%OqtaneBin%\runtimes\win-x64\native\" /Y
+@REM Imageflow.NativeRuntime.win-x86
+XCOPY "..\Server\bin\%BuildFolder%\%ModuleTargetFramework%\runtimes\win-x86\native\imageflow.dll" "%OqtaneBin%\runtimes\win-x86\native\" /Y
+@REM Microsoft.IO.RecyclableMemoryStream (>= 3.0.1 && < 4.0.0)
+XCOPY "..\Server\bin\%BuildFolder%\%ModuleTargetFramework%\Microsoft.IO.RecyclableMemoryStream.dll" "%OqtaneBin%\" /Y
 @REM System.Text.Json (>= 6.0.11)
 @REM - v9.0.0.0 is part of Oqtane 6.1.0 or 2sxc v19.00.01+
